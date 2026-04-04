@@ -5,16 +5,20 @@ import Footer from "@/components/footer/Footer.jsx";
 export const metadata = {
   title: "DSA UserDash",
   description: "Solve important DSA problems",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-slate-950 text-white min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <div className="fixed top-0 left-0 w-full z-50"><Navbar /></div>
+        <main className="m-20">{children}</main>
+        <div className="fixed bottom-0 left-0 w-full z-50"><Footer /></div>
       </body>
     </html>
   );
 }
+

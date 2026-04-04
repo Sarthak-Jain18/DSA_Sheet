@@ -5,6 +5,9 @@ import Footer from "@/components/footer/Footer.js";
 export const metadata = {
   title: "DSA AdminDash",
   description: "Solve important DSA problems",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -18,3 +21,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
