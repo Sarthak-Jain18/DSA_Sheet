@@ -20,9 +20,9 @@ export default function TopicPage() {
     }, [id]);
 
     return (
-        <div className="min-h-screen p-8 bg-slate-950 text-white">
+        <div className="min-h-screen mx-20 p-12 bg-slate-950 text-white">
 
-            <h1 className="text-2xl font-semibold mb-8 capitalize">{topicName} Problems</h1>
+            <h1 className="text-3xl font-bold text-white mb-8">{topicName} Problems</h1>
 
             {/* TABLE */}
             <div className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">

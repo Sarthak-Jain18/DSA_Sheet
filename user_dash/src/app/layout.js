@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-slate-950 text-white min-h-screen flex flex-col">
         <div className="fixed top-0 left-0 w-full z-50"><Navbar /></div>
-        <main className="m-20">{children}</main>
-        <div className="fixed bottom-0 left-0 w-full z-50"><Footer /></div>
+        <main className="pt-10 flex-1">{children}</main>
+        <Footer/>
       </body>
     </html>
   );

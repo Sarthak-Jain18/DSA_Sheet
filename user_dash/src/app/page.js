@@ -19,9 +19,9 @@ export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-10">
 
-      <h1 className="text-3xl font-bold text-white mb-8">DSA Topics</h1>
+      <h1 className="text-3xl font-bold text-white my-3">DSA Topics</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
         {/* Topic Cards */}
         {topics.map((topic) => (<Link key={topic._id} href={`/topics/${topic._id}`}>
@@ -49,6 +49,7 @@ export default function Home() {
         ))}
 
       </div>
+
     </div>
   );
 }
